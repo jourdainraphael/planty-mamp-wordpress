@@ -66,7 +66,7 @@ define( 'NONCE_SALT',       '7ep!y<{c/n#MRy I.5Y#W%U^hwt`b!<3Dtq9i$v@pzqxS<YR#AC
  *
  * Vous pouvez installer plusieurs WordPress sur une seule base de données
  * si vous leur donnez chacune un préfixe unique.
- * N’utilisez que des chiffres, des lettres non-accentuées, et des caractères soulignés !
+ * N’utilisez que des chiffres, des lettres non-accentuées, et des caractères soulignés !
  */
 $table_prefix = 'wp_';
 
