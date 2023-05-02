@@ -39,7 +39,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php echo esc_html( astra_default_strings( 'string-header-skip-link', false ) ); ?>
 </a>
 
+<header>
+
+	<!-- <nav> 
+		<div class="menu-items">
+			<ul class="nav-bar">
+				<li><a href="localhost/planty/nous-rencontrer">Nous rencontrer</a></li>
+				<li><a href="localhost/planty/admin">Admin</a></li>
+				<li><a href="localhost/planty/commander">Commander</a></li>
+
+			</ul>
+		</div>		
+	</nav> -->
+</header>
+
 <div
+
 <?php
 	echo astra_attr(
 		'site',
@@ -49,11 +64,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 		)
 	);
 	?>
+	
 >
 	<?php
 	astra_header_before();
+	
+	// wp_nav_menu( 
+    //     array( 
+    //         'theme_location' => 'Menu-principal'
+    //     ) 
+    // ); 
+	
+    // astra_maybe_do_primary_menu(
+    //     array(
+    //         'menu_class' => 'menu-header', // Ajoute une classe CSS personnalisée à votre menu
+    //     )
+    // );
 
 	astra_header();
+
+    
 
 	astra_header_after();
 

@@ -11,8 +11,36 @@ License      URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags:        custom-menu
 Text Domain: astra-child-theme
 */
+@media (max-width: 768px) {
+    .ast-mobile-header-wrap .menu-item-has-children > a::after {
+        display: none !important;
+    }
+    .ast-mobile-header-wrap .menu-item-has-children > ul {
+        display: none !important;
+    }
+}
 
+.nav-bar {
+    display: flex !important;
+    align-items: center;
+    justify-items: end;
+    gap: 1.5em;
+}
 
-body {
-    background-color: blue !important;
+ul, li {
+    list-style-type: none;
+}
+
+.menu-item-25, .menu-item-25 :hover {
+    width: 236px;      
+}
+
+.menu-item-25 {
+    background-color: #dc9f96;
+    align-items: center; 
+}
+
+.menu-item-25 :hover {
+   justify-content: center;
+   background-color: #c02e44; 
 }
